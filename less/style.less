@@ -1,0 +1,276 @@
+// out: ../css/styles.css, sourcemap: true, compress: true
+body{
+  overflow-x: hidden;
+}
+
+@nice-grey: #4a4a4a;
+@blanc-cassé: #f5f5f5;
+@bnbred: #ff5a5f;
+@bnbgreen: #007a87;
+@bnbgrey: #c4c4c4;
+@bnbblack: #484848;
+@bckgdbnb: #edefed;
+.background{
+  background-image: url(../img/bikes.jpg);
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+.transparent{
+  box-shadow: none;
+.nav-wrapper{
+  color: black;
+.navbar-text:hover{
+  background-color: transparent;
+}
+.brand-logo{
+  color: white;
+  margin-left: 2%;
+  cursor: pointer;
+  }
+.hide-on-med-and-down:hover{
+  opacity: 1.0;
+  box-shadow: none;
+  color: @bnbred;
+}
+.sass{
+  border: 2.2px solid white;
+  padding: 7px;
+  transition: 1s;
+&:hover{
+  color: @bnbgreen;
+  border: 2.2px solid @bnbred;
+  transform: 1s;
+} /*&:hover*/
+} /*sass*/
+} /*nav-wrapper*/
+} /*transparent*/
+.hero{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+.vivez{
+  color: white;
+  font-size: 60px;
+  font-weight: 690;
+  margin-top: 7%;
+}   /*vivez*/
+.reservez{
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-family: Helvetica,Arial;
+} /*reservez*/
+.btn-plus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: @bnbblack;
+  height: 5vh;
+  width: 32vh;
+  text-transform: none;
+  margin-top: 5%;
+  transition: 1s;
+  &:hover{
+    background-color: @bnbgreen;
+    color: white;
+    transform: 1s;
+
+  }
+.center-text-btn{
+  font-size: 1.9vh;
+  font-weight: bold;
+
+ }
+ }   /*waves-effect*/
+ }      /*container*/
+ }     /*background*/
+
+  .form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2%;
+  .formulaire{
+  margin-top: -30vh;
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: white;
+  .recherchez{
+  text-align: center;
+  white-space:nowrap;
+  font-size: 180%;
+  font-family:Helvetica;
+  font-weight: bold;
+  color: @nice-grey;
+  } /*recherchez*/
+  .depart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  .input-field{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #input_text{
+  height: 40px;
+  width: 350px;
+  margin-top: 20px;
+  background-color: white;
+  color: grey;
+  border-width:2px;
+  border-style:solid;
+  border-color:@bnbgrey;
+  } /*input_text*/
+  .datepicker{
+  text-align: center;
+  height: 40px;
+  width: 150px;
+  margin-top: 20px;
+  background-color: white;
+  color: @bnbgrey;
+  border-width:2px;
+  border-style:solid;
+  border-color:@bnbgrey;
+  border-left: none;
+  } /*input_text1*/
+  .btn-sb{
+  font-family: roboto;
+  color: white;
+  background-color: @bnbred;
+  border: 1px solid @bnbred;
+  border-radius: 2px;
+  padding: 9px 20px;
+  text-decoration: none;
+  transition: 1s;
+  &:hover{
+  color: white;
+  background-color: @bnbgreen;
+  border: 1px solid @bnbgreen;
+  border-radius: 2px;
+  transform: 1s;
+  } /*input-field*/
+  } /*&:hover*/
+  } /*btn-sbt*/
+  } /*départ*/
+  } /*formulaire*/
+  } /*form*/
+  .background-grey{
+    background-color: @bckgdbnb;
+    margin-top: -3%;
+  .guest{
+    background-color: @bckgdbnb;
+  .guest-img{
+    margin-top: 7%;
+    height: 43vh;
+    background-image: url(../img/guest.jpg);
+  } /*guest-img*/
+  .nouvelle-vie{
+  margin-top: 7%;
+  height: 43vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .btn-sb {
+  font-family: roboto;
+  letter-spacing: 1px;
+  color: white;
+  background-color: @bnbgreen;
+  border: 1px solid @bnbgreen;
+  border-radius: 2px;
+  padding: 9px 20px;
+  text-decoration: none;
+  transition: 1s;
+  &:hover{
+  color: white;
+  background-color: @bnbred;
+  border: 1px solid @bnbred;
+  border-radius: 2px;
+  transform: 1s;
+  } /*&:hover*/
+  } /*btn-sb*/
+  } /*nouvelle-vie*/
+  } /*guest*/
+  .weekend{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .row-text{
+  color: @bnbblack;
+  font-weight: bold;
+  font-size: 4vh;
+  font-family: Helvetica,Arial;
+  } /*row-text*/
+  .row-small-text{
+  margin-bottom: 4%;
+  color: @bnbblack;
+  font-size: 2vh;
+  font-family: Helvetica,Arial;
+  } /*row-small-text*/
+  } /*weekend*/
+.villes{
+  display: flex;
+  flex-direction: row;
+  .lille{
+    width: 43vh;
+    height: 43vh;
+    background-image: url(../img/lille.jpeg);
+   background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bruxelles{
+    width: 43vh;
+    height: 43vh;
+      background-image: url(../img/bruxelles.jpeg);
+     background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .londres{
+    width: 43vh;
+    height: 43vh;
+      background-image: url(../img/londres.jpeg);
+     background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  } /*cities*/
+
+  .explorez{
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  .btn-destinations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: @bnbblack;
+    height: 5vh;
+    width: 32vh;
+    text-transform: none;
+    margin-top: 5%;
+    transition: 1s;
+  }
+  } /*explorez*/
+  } /*background-grey*/
